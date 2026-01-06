@@ -38,4 +38,9 @@ public class ComplaintController {
     public List<Complaint> getUserComplaints(@PathVariable Long id){
         return complaintService.getUserComplaints(id);
     }
+
+    @GetMapping("/all")
+    public List<Complaint> getAllComplaints(){
+        return complaintService.getAllComplaints();
+    }
 }
